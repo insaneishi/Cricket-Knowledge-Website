@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Highlights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("highlight.bg.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-style: italic;
+            font-size: 44px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-style: italic;
+            font-size: 34px;
+            text-align: start;
+            
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .match {
+            background: linear-gradient(135deg, #ff9ab3, #fad0c4);
+            color: #33005b;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .match:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .match a {
+            color: #2b0e42;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .match a:hover {
+            text-decoration: underline;
+        }
+
+        .match img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .search-container {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            width: 800px;
+            padding: 0 20px;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .search-box:focus {
+            border-color: #007BFF;
+            box-shadow: 0 0 10px rgba(0,123,255,0.2);
+            transform: scale(1.02);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Match Highlights</h1>
+    <div class="search-container">
+        <input type="text" 
+               class="search-box" 
+               placeholder="Search matches..."
+               id="searchBox">
+    </div>
+    <h2>Suggested highlights-:
+    </h2>
+    <div class="container">
+        <div class="match">
+            <iframe height="200px" src="https://www.youtube.com/embed/RGJIVqhS1xc?si=H4b7Ow8XH7BsO16W" frameborder="0" allowfullscreen></iframe>
+            <h2>Match 1: India vs Australia</h2>
+            <a href="https://youtu.be/RGJIVqhS1xc?si=H4b7Ow8XH7BsO16W" target="_blank">View Highlights</a>
+        </div>
+        <div class="match">
+            <iframe height="200px" src="https://www.youtube.com/embed/_q9WnSm1UZY?si=mFecd95F3vxDFDso" frameborder="0" allowfullscreen></iframe>
+            <h2>Match 2: England vs South Africa</h2>
+            <a href="https://youtu.be/_q9WnSm1UZY?si=mFecd95F3vxDFDso" target="_blank">View Highlights</a>
+        </div>
+        <div class="match">
+            <iframe height="200px" src="https://www.youtube.com/embed/Nbdy-y3pjM8?si=LzK_2soioES0pyy7" frameborder="0" allowfullscreen></iframe>
+            <h2>Match 3: Pakistan vs New Zealand</h2>
+            <a href="https://youtu.be/Nbdy-y3pjM8?si=PqcVwPijXW1K1QKX" target="_blank">View Highlights</a>
+        </div>
+        <div class="match">
+            <iframe height="200px" src="https://www.youtube.com/embed/cng4Z_Qoq1o?si=TatMXAhp-mz0v0BG" frameborder="0" allowfullscreen></iframe>
+            <h2>Match 4: Sri Lanka vs West Indies</h2>
+            <a href="https://youtu.be/cng4Z_Qoq1o?si=TatMXAhp-mz0v0BG" target="_blank">View Highlights</a>
+        </div>
+        <div class="match">
+            <iframe height="200px" src="https://www.youtube.com/embed/6da7sQR21J0?si=k2vcWnvU5o0hwsfV" frameborder="0" allowfullscreen></iframe>
+            <h2>Match 5: Bangladesh vs Afghanistan</h2>
+            <a href="https://youtu.be/6da7sQR21J0?si=k2vcWnvU5o0hwsfV" target="_blank">View Highlights</a>
+        </div>
+        <div class="match">
+            <iframe height="200px" src="https://www.youtube.com/embed/IvjBlpb8GTA?si=bZjitgNc602qasCa" frameborder="0" allowfullscreen></iframe>
+            <h2>Match 6: India vs Pakistan</h2>
+            <a href="https://youtu.be/IvjBlpb8GTA?si=bZjitgNc602qasCa" target="_blank">View Highlights</a>
+        </div>
+    </div>
+    
+</body>
+</html>

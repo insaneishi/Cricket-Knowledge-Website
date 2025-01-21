@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - FanZone.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(Ground.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(2, 136, 209, 0.9);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .feature {
+            background-color: rgba(255, 255, 255, 0.806);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 2.5rem;
+            margin: 1rem;
+            flex: 1 1 calc(45% - 2rem); 
+            max-width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+        }
+
+        .feature img {
+            width: 230px;
+            height: 200px;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            color: #0288d1;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            color: #333;
+        }
+
+        .feature a {
+            text-decoration: none;
+            color: #0288d1;
+            font-weight: bold;
+            display: block;
+            margin-top: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .feature a:hover {
+            color: #ff5722;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Features - FanZone.com</h1>
+    </header>
+
+    <section class="features" id="features">
+        <div class="feature">
+            <img src="live.jpeg" alt="Live Scores">
+            <h3>Live Scores</h3>
+            <p>Stay updated with real-time match scores and stats.</p>
+            <a href="live.html">Learn More</a>
+        </div>
+        <div class="feature">
+            <img src="vk.jpeg" alt="Player Stats">
+            <h3>Player Stats</h3>
+            <p>Get detailed information about your favorite players.</p>
+            <a href="players.html">Learn More</a>
+        </div>
+        <div class="feature">
+            <img src="highlight.jpeg" alt="Match Highlights">
+            <h3>Match Highlights</h3>
+            <p>Relive the best moments of every match.</p>
+            <a href="highlight.html">Learn More</a>
+        </div>
+        <div class="feature">
+            <img src="fav.jpeg" alt="My Favourites">
+            <h3>My Favourites</h3>
+            <p>Create and manage a list of your all-time favorite players and teams.</p>
+            <a href="fav.html">Learn More</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cricket FanZone. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

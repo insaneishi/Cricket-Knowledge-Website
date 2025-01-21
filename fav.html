@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourite Cricketers</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('favbg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #545855;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .cricketer {
+            background: orange; 
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cricketer:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+        }
+        .cricketer img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .cricketer-info {
+            flex-grow: 1;
+        }
+        .cricketer-info h2 {
+            color:  #545855;
+            margin: 0;
+        }
+        .cricketer-info p {
+            font-size: 16px;
+            margin-top: 5px;
+            color: #fff;
+        }
+        .add-player {
+            text-align: center;
+            margin-top: 30px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Favourite Cricketers</h1>
+
+<div class="cricketer">
+    <img src="abhifav.jpg" alt="Abhishek Sharma">
+    <div class="cricketer-info">
+        <h2>Abhishek Sharma</h2>
+        <p>Statistics: Matches: 30 | Runs: 800 | Wickets: 20</p>
+    </div>
+</div>
+
+<div class="cricketer">
+    <img src="yashfav.jpg" alt="Yashasvi Jaiswal">
+    <div class="cricketer-info">
+        <h2>Yashasvi Jaiswal</h2>
+        <p>Statistics: Matches: 25 | Runs: 600 | Wickets: 10</p>
+    </div>
+</div>
+
+<div class="cricketer">
+    <img src="dalefav.jpg" alt="Dale Steyn">
+    <div class="cricketer-info">
+        <h2>Dale Steyn</h2>
+        <p>Statistics: Matches: 100 | Runs: 3000 | Wickets: 450</p>
+    </div>
+</div>
+
+<div class="cricketer">
+    <img src="samfav.jpg" alt="Sam Curran">
+    <div class="cricketer-info">
+        <h2>Sam Curran</h2>
+        <p>Statistics: Matches: 50 | Runs: 900 | Wickets: 50</p>
+    </div>
+</div>
+
+<div class="add-player">
+    <button>Add More Players</button>
+</div>
+
+</body>
+</html>

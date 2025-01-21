@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FanZone - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(stadium.jpeg); 
+            background-size: 1350px 584px; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgb(238, 243, 244, 0.2);
+            padding: 70px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 550;
+            max-width: 550px;
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 54px;
+            font-style: italic;
+            font-family: cursive;
+            color: #0ee1f4;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="name"],
+        input[type="number"],
+        input[type="password"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff5722;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #e64a19;
+        }
+
+        .switch {
+            margin-top: 15px;
+            font-size: 24px;
+        }
+
+        .switch a {
+            color: #0758fbd3;
+            text-decoration: none;
+        }
+
+        .switch a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to FanZone</h1>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="name" placeholder="Name" required>
+            <input type="number" placeholder="Mobile" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm password" required>
+            <button type="submit"><a href="home.html"> Sign Up</a></button>
+        </form>
+        <div class="switch">
+           <b> Already have an account? <a href="login.html">Login</a></b>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FanZone.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(Ground.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(2, 136, 209, 0.9);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 0.5rem;
+        }
+        nav a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+
+
+        .hero {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .hero button {
+            background-color: #ff5722;
+            border: none;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #e64a19;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background-color: rgba(255, 255, 255, 0.806);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 1.5rem;
+            margin: 1rem;
+            flex: 1 1 calc(30% - 2rem);
+            max-width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+        }
+
+        .feature img {
+            width: 230px;
+            height: 200px;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            color: #0288d1;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FanZone.com</h1>
+        <nav>
+            <a href="features.html">Features</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+           
+            
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h2>Welcome to Cricket FanZone</h2>
+            <p>Your one-stop destination for all things cricket!</p>
+           <button><a href="slide.html">Explore Now</a></div></button>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2025 Cricket FanZone. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Players</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url("playerbg.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: #333;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin: 20px;
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        #playersContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .player-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .virat-card {
+            background: #cce5ff; 
+        }
+        
+        .india-player {
+            background: #cce5ff; 
+        }
+        
+        .australia-player {
+            background: #fff3cc;  
+        }
+        
+        .england-player {
+            background: #ffcccc; 
+        }
+        
+        .southafrica-player {
+            background: #ccffcc;  
+        }
+        
+        .newzealand-player {
+            background: #cccccc;  
+        }
+        
+        .player-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .player-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0);
+            transition: all 0.3s ease;
+            z-index: 1;
+            border-radius: 8px;
+        }
+        
+        .player-card:hover::before {
+            background: rgba(0,0,0,0.1);
+        }
+        
+        .player-image {
+            width: 80%;
+            height: 300px;
+            padding: 20px;
+            object-fit: cover;
+        }
+        
+        .player-details {
+            padding: 15px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .player-details h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #444;
+        }
+        
+        .player-details p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .know-more-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .search-container {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 500px;
+            padding: 0 20px;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .search-box:focus {
+            border-color: #007BFF;
+            box-shadow: 0 0 10px rgba(0,123,255,0.2);
+            transform: scale(1.02);
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="features.html" class="back-button">&#8592; Back</a>
+    
+    <div class="search-container">
+        <input type="text" 
+               class="search-box" 
+               placeholder="Search by Player Name, Country or Position..."
+               id="searchBox">
+    </div>
+
+    <div id="playersContainer">
+        <div class="player-card india-player">
+            <img src="virat-kohli.avif" alt="Virat Kohli" class="player-image">
+            <div class="player-details">
+                <h3>Name: Virat Kohli</h3>
+                <p>Country: India</p>
+                <p>Position: Batsman</p>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="player-card england-player">
+            <img src="Joe_Root_HIP148.jpg" alt="Joe Root" class="player-image">
+            <div class="player-details">
+                <h3>Name: Joe Root</h3>
+                <p>Country: England</p>
+                <p>Position: Batsman</p>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="player-card australia-player">
+            <img src="patcummins.jpg" alt="Pat Cummins" class="player-image">
+            <div class="player-details">
+                <h3>Name: Pat Cummins</h3>
+                <p>Country: Australia</p>
+                <p>Position: Bowler</p>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="player-card newzealand-player">
+            <img src="kaneWilliamson.jpeg.jpg" alt="Kane Williamson" class="player-image">
+            <div class="player-details">
+                <h3>Name: Kane Williamson</h3>
+                <p>Country: New Zealand</p>
+                <p>Position: Batsman</p>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="player-card india-player">
+            <img src="rohit-sharma-071855-1x1_0.webp" alt="Rohit Sharma" class="player-image">
+            <div class="player-details">
+                <h3>Name: Rohit Sharma</h3>
+                <p>Country: India</p>
+                <p>Position: Batsman</p>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="player-card australia-player">
+            <img src="davidWarner.jpeg.jpg" alt="David Warner" class="player-image">
+            <div class="player-details">
+                <h3>Name: David Warner</h3>
+                <p>Country: Australia</p>
+                <p>Position: Batsman</p>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="player-card india-player">
+            <img src="surya.jpeg.jpg" alt="Suryakumar Yadav" class="player-image">
+            <div class="player-details">
+                <h3>Name: Suryakumar Yadav</h3>
+                <p>Country: India</p>
+                <p>Position: Batsman</p>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="player-card southafrica-player">
+            <img src="4454.webp" alt="AB de Villiers" class="player-image">
+            <div class="player-details">
+                <h3>Name: AB de Villiers</h3>
+                <p>Country: South Africa</p>
+                <p>Position: Batsman</p>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const searchBox = document.getElementById('searchBox');
+        const playerCards = document.querySelectorAll('.player-card');
+
+        searchBox.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+
+            playerCards.forEach(card => {
+                const playerName = card.querySelector('h3').textContent.toLowerCase();
+                const playerCountry = card.querySelector('p:nth-of-type(1)').textContent.toLowerCase();
+                const playerPosition = card.querySelector('p:nth-of-type(2)').textContent.toLowerCase();
+
+                if (playerName.includes(searchTerm) || 
+                    playerCountry.includes(searchTerm) || 
+                    playerPosition.includes(searchTerm)) {
+                    card.classList.remove('hidden');
+                    // Add smooth animation for showing cards
+                    card.style.opacity = '1';
+                    card.style.transform = 'scale(1)';
+                } else {
+                    // Add smooth animation for hiding cards
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        card.classList.add('hidden');
+                    }, 300);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
